@@ -15,7 +15,7 @@ export default function Guide(props: any) {
       </div>
 
       <div className="guide-image">
-        <Image src={guide} width="100%" height="100%" alt="highlight image" />
+        <Image src={guide} alt="highlight image" />
       </div>
     </div>
   );
