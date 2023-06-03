@@ -41,7 +41,7 @@
 }
 .nav-bar {
   position: absolute;
-  min-width: 60%;
+  min-width: 80%;
   top: 24px;
   background: #ffffff;
   border-radius: 12px;
@@ -267,7 +267,7 @@
 .logo-white {
   display: flex;
   align-items: flex-end;
-  margin-left: 400px;
+  margin-left: 188px;
   cursor: pointer;
 }
 .sidemenu-toggle-icon {
