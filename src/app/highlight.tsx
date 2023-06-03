@@ -17,21 +17,21 @@ export default function Highlight(props: any) {
     containerClass,
   } = props;
   return (
-    <Link href="/about">
-      <div className={`highlight ${containerClass}`}>
-        <Image
-          src={imageUrl}
-          width={imageWidth}
-          height={imageHeight}
-          alt="highlight image"
-          style={{
-            borderRadius: "8px 8px 0 0",
-          }}
-        />
-        <div className="highlight-desc">
-          <div className="header">{headerText}</div>
-          <div className="item-body IBM-400">{bodyText}</div>
-          <div className="btn-area">
+    <div className={`highlight ${containerClass}`}>
+      <Image
+        src={imageUrl}
+        width={imageWidth}
+        height={imageHeight}
+        alt="highlight image"
+        style={{
+          borderRadius: "8px 8px 0 0",
+        }}
+      />
+      <div className="highlight-desc">
+        <div className="header">{headerText}</div>
+        <div className="item-body IBM-400">{bodyText}</div>
+        <div className="btn-area">
+          <Link href="/about">
             <div className="arrow-btn centerHV">
               <Image
                 src={btnIcon}
@@ -40,10 +40,10 @@ export default function Highlight(props: any) {
                 alt="arrow image"
               />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 

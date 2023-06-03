@@ -57,6 +57,7 @@
 .logo-black {
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 }
 .nav-bar-links {
   gap: 40px;
@@ -68,6 +69,7 @@
   background: #008080;
   border-radius: 8px;
   color: #ffffff;
+  cursor: pointer;
 }
 .hero-text {
   font-family: "IBM Plex Mono";
@@ -111,6 +113,7 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 38px;
+  cursor: pointer;
 }
 .guide-contact-btn {
   font-family: revert;
@@ -225,6 +228,7 @@
   height: 68px;
   background: #ffffff;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .categories-label,
@@ -240,12 +244,14 @@
 }
 .nav-bar-links {
   display: flex;
+  cursor: pointer;
 }
 
 .logo-white {
   display: flex;
   align-items: flex-end;
   margin-left: 188px;
+  cursor: pointer;
 }
 
 .footer {
@@ -254,14 +260,7 @@
   display: flex;
   align-items: center;
 }
-
-@media only screen and (max-width: 600px) {
-  .page-body {
-    width: 100%;
-  }
-  .items {
-    margin-left: 10px;
-  }
+@media only screen and (max-width: 800px) {
   .nav-bar {
     position: absolute;
     top: 0;
@@ -269,6 +268,18 @@
     height: 80px;
     background: #ffffff;
     border-radius: 0;
+  }
+  .nav-bar-items {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-body {
+    width: 100%;
+  }
+  .items {
+    margin-left: 10px;
   }
   .hero-text {
     position: absolute;
@@ -328,8 +339,5 @@
   }
   .menu-icon {
     margin-right: 10px;
-  }
-  .nav-bar-items {
-    display: none;
   }
 }
