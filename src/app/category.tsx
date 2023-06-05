@@ -27,8 +27,12 @@ export default function Category(props: any) {
         </div>
         {showlist ? (
           <div className="dropdown">
-            {activities.map((activity) => {
-              return <div className="dropdown-item">{activity.title}</div>;
+            {activities.map((activity: any) => {
+              return (
+                <div className="dropdown-item" key={activity.title}>
+                  {activity.title}
+                </div>
+              );
             })}
           </div>
         ) : null}

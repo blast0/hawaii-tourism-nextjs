@@ -273,16 +273,12 @@
   display: flex;
   cursor: pointer;
 }
-.highlights-text {
-}
 
 .logo-white {
   display: flex;
   align-items: flex-end;
   margin-left: 188px;
   cursor: pointer;
-}
-.sidemenu-toggle-icon {
 }
 .footer {
   height: 80px;
