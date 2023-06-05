@@ -1,14 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import arrow from "../assets/arrow_forward.png";
-import Link from "next/link";
 
 export default function Category(props: any) {
-  const { text, iconImage, height, width } = props;
+  const [showlist, setShowlist] = useState(false);
+  const { text, iconImage, height, width, activities } = props;
+  console.log(showlist);
   return (
-    <div className="category">
-      <div className="category-text IBM-400">{text}</div>
-      <Link href="/about">
+    <>
+      <div
+        className="category"
+        style={{
+          position: "relative",
+        }}
+        onClick={() => setShowlist(!showlist)}
+      >
+        <div className="category-text IBM-400">{text}</div>
         <div>
           <Image
             src={iconImage}
@@ -17,8 +25,15 @@ export default function Category(props: any) {
             alt="arrow image"
           />
         </div>
-      </Link>
-    </div>
+        {showlist ? (
+          <div className="dropdown">
+            {activities.map((activity) => {
+              return <div className="dropdown-item">{activity.title}</div>;
+            })}
+          </div>
+        ) : null}
+      </div>
+    </>
   );
 }
 

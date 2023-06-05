@@ -43,7 +43,13 @@ export default async function Home() {
           <div className="categories">
             <div className="categories-label">Categories</div>
             {categories.map((item: any, index: number) => {
-              return <Category key={index} text={item?.name} />;
+              return (
+                <Category
+                  activities={item?.activities}
+                  key={index}
+                  text={item?.name}
+                />
+              );
             })}
           </div>
           <div className="guides">
