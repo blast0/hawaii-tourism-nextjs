@@ -39,49 +39,7 @@
   background: url(../assets/hero.png) center/ cover;
   flex-direction: row;
 }
-.nav-bar {
-  position: absolute;
-  min-width: 80%;
-  top: 24px;
-  background: #ffffff;
-  border-radius: 12px;
-}
-.nav-bar-items {
-  justify-content: space-between;
-  padding: 23px;
-  gap: 80px;
-}
-.menu-links {
-  gap: 80px;
-}
-.logo-black {
-  display: flex;
-  align-items: flex-end;
-  cursor: pointer;
-}
-.nav-bar-links {
-  gap: 40px;
-}
-.menu-btn {
-  font-family: revert;
-  flex-direction: row;
-  padding: 9px 24px 11px;
-  background: #008080;
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
-  margin: 20px 0 0 20px;
-  width: 154px;
-}
-.nav-bar-btn {
-  font-family: revert;
-  flex-direction: row;
-  padding: 9px 24px 11px;
-  background: #008080;
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
-}
+
 .hero-text {
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -110,49 +68,6 @@
   gap: 32px;
 }
 
-.guide-name {
-  font-family: "IBM Plex Mono";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 20px;
-  color: #001a1a;
-  margin-bottom: 8px;
-}
-
-.contact-btn {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 38px;
-  cursor: pointer;
-}
-.guide-contact-btn {
-  font-family: revert;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  color: #008080;
-  border: 1px solid #008080;
-  padding: 10px 26px;
-  border-radius: 10px;
-}
-
-.guide {
-  width: 560px;
-  height: 176px;
-  left: 764px;
-  top: 1140px;
-  background: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
-}
-.guide-details {
-  display: flex;
-  flex-direction: column;
-}
-
 .highlights,
 .categories,
 .guides {
@@ -162,24 +77,6 @@
 }
 .guides {
   gap: 8px;
-}
-.highlight-desc {
-  padding: 24px;
-}
-.item-body {
-  height: 40px;
-  margin-top: 24px;
-}
-.btn-area {
-  display: flex;
-  justify-content: flex-end;
-}
-.arrow-btn {
-  margin-top: 6px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: #e6f2f2;
 }
 .header {
   font-family: "IBM Plex Mono";
@@ -197,13 +94,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.highlight {
-  height: 340px;
-  width: 368px;
-  background: #ffffff;
-  box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
-  border-radius: 8px;
-}
+
 .image {
   height: 170px;
 }
@@ -211,10 +102,6 @@
 .highlights-label {
   color: #001a1a;
   margin-top: 40px;
-}
-.leftmenu-item {
-  padding: 20px;
-  cursor: pointer;
 }
 
 .categories-and-guides {
@@ -231,33 +118,6 @@
   justify-content: flex-start;
   gap: 8px;
 }
-
-.category {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px;
-  gap: 10px;
-  width: 544px;
-  height: 68px;
-  background: #ffffff;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.dropdown {
-  width: 544px;
-  position: absolute;
-  background: white;
-  top: 69px;
-  border-radius: 8px;
-  left: 0;
-  z-index: 3;
-}
-.dropdown-item {
-  padding: 10px;
-  border-bottom: 1px solid grey;
-}
 .categories-label,
 .guides-label {
   width: 100%;
@@ -265,27 +125,12 @@
   margin-top: 40px;
   margin-bottom: 16px;
 }
-.guide-image {
-  height: 128px;
-  width: 128px;
-}
+
 .nav-bar-links {
   display: flex;
   cursor: pointer;
 }
 
-.logo-white {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 188px;
-  cursor: pointer;
-}
-.footer {
-  height: 80px;
-  background: #001a1a;
-  display: flex;
-  align-items: center;
-}
 @media only screen and (max-width: 800px) {
   .hero-text {
     z-index: 1;
@@ -350,25 +195,13 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  .highlight {
-    width: 334px;
-  }
+
   .highlights-label {
     align-items: flex-start;
     margin-left: 16px;
   }
-  .category {
-    width: 358px;
-  }
   .guide {
     width: 356px;
-  }
-  .guide-image {
-    height: 74px;
-    width: 74px;
-  }
-  .logo-white {
-    margin-left: 16px;
   }
 
   .logo-black {

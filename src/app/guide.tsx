@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import guide from "../assets/guide.png";
+import "./guide.css";
 
 export default function Guide(props: any) {
   const { name, desc } = props;
@@ -15,7 +16,7 @@ export default function Guide(props: any) {
       </div>
 
       <div className="guide-image">
-        <Image src={guide} alt="highlight image" />
+        <Image src={guide} alt="guide image" />
       </div>
     </div>
   );

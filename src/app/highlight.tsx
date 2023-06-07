@@ -3,6 +3,7 @@ import Image from "next/image";
 import arrow from "../assets/arrow_forward.png";
 import item1 from "../assets/item1.png";
 import Link from "next/link";
+import "./highlight.css";
 
 export default function Highlight(props: any) {
   const {
@@ -16,6 +17,7 @@ export default function Highlight(props: any) {
     bodyText,
     containerClass,
   } = props;
+  const url = "/activities/" + headerText;
   return (
     <div className={`highlight ${containerClass}`}>
       <Image
@@ -28,10 +30,10 @@ export default function Highlight(props: any) {
         }}
       />
       <div className="highlight-desc">
-        <div className="header">{headerText}</div>
+        <div className="highlight-header">{headerText}</div>
         <div className="item-body IBM-400">{bodyText}</div>
         <div className="btn-area">
-          <Link href="/about">
+          <Link href={url}>
             <div className="arrow-btn centerHV">
               <Image
                 src={btnIcon}

@@ -2,11 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import arrow from "../assets/arrow_forward.png";
-
+import "./category.css";
 export default function Category(props: any) {
   const [showlist, setShowlist] = useState(false);
   const { text, iconImage, height, width, activities } = props;
-  console.log(showlist);
   return (
     <>
       <div

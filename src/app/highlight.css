@@ -1,0 +1,33 @@
+.highlight {
+  height: 340px;
+  width: 368px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+  border-radius: 8px;
+}
+.highlight-desc {
+  padding: 24px;
+}
+.highlight-header {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #008080;
+}
+.item-body {
+  height: 40px;
+  margin-top: 24px;
+}
+.btn-area {
+  display: flex;
+  justify-content: flex-end;
+}
+.arrow-btn {
+  margin-top: 6px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #e6f2f2;
+}

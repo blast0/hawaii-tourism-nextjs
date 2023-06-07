@@ -1,0 +1,36 @@
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  width: 544px;
+  height: 68px;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown {
+  width: 544px;
+  position: absolute;
+  background: white;
+  top: 69px;
+  border-radius: 8px;
+  left: 0;
+  z-index: 3;
+}
+.dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .category {
+    width: 358px;
+  }
+  .dropdown {
+    width: 358px;
+  }
+}

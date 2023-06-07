@@ -1,0 +1,17 @@
+.footer {
+  height: 80px;
+  background: #001a1a;
+  display: flex;
+  align-items: center;
+}
+.logo-white {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 188px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .logo-white {
+    margin-left: 16px;
+  }
+}

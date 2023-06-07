@@ -1,0 +1,50 @@
+.guide {
+  width: 560px;
+  height: 176px;
+  left: 764px;
+  top: 1140px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.guide-details {
+  display: flex;
+  flex-direction: column;
+}
+.guide-name {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #001a1a;
+  margin-bottom: 8px;
+}
+.contact-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 38px;
+  cursor: pointer;
+}
+.guide-contact-btn {
+  font-family: revert;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #008080;
+  border: 1px solid #008080;
+  padding: 10px 26px;
+  border-radius: 10px;
+}
+.guide-image {
+  height: 128px;
+  width: 128px;
+}
+@media only screen and (max-width: 600px) {
+  .guide-image {
+    height: 74px;
+    width: 74px;
+  }
+}

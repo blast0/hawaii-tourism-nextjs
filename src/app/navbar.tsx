@@ -9,6 +9,7 @@ import a from "../assets/a.png";
 import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 import Link from "next/link";
+import "./navbar.css";
 
 export default function Navbar() {
   const [showSidemenu, setShowSidemenu] = useState(false);
@@ -33,11 +34,11 @@ export default function Navbar() {
         <div className="menu-links centerV">
           <Link href="/">
             <div className="logo-black">
-              <Image src={A} width={23} height={33} alt="highlight image" />
-              <Image src={l} width={17} height={32} alt="highlight image" />
-              <Image src={o} width={17} height={21} alt="highlight image" />
-              <Image src={h} width={22} height={35} alt="highlight image" />
-              <Image src={a} width={23} height={21} alt="highlight image" />
+              <Image src={A} width={23} height={33} alt="image" />
+              <Image src={l} width={17} height={32} alt="image" />
+              <Image src={o} width={17} height={21} alt="image" />
+              <Image src={h} width={22} height={35} alt="image" />
+              <Image src={a} width={23} height={21} alt="image" />
             </div>
           </Link>
           <div className="nav-bar-links IBM-400">
@@ -56,9 +57,9 @@ export default function Navbar() {
         onClick={() => setShowSidemenu(!showSidemenu)}
       >
         {!showSidemenu ? (
-          <Image src={menu} width={30} height={20} alt="highlight image" />
+          <Image src={menu} width={30} height={20} alt="image" />
         ) : (
-          <Image src={close} width={24} height={24} alt="highlight image" />
+          <Image src={close} width={24} height={24} alt="image" />
         )}
       </div>
     </div>
